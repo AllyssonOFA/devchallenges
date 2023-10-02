@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;400;700&display=swap');
+
+:root {
+    --clr-blue-violet: #883AE1;
+    --clr-pale-lavender: #E6D6FC;
+    --clr-bright-gray: #E5EAF0;
+    --clr-lotion: #FAFAF9;
+    --clr-white: #FFFFFF;
+    --clr-yankees-blue: #20293A;
+    --clr-autometalsaurus: #6C727F;
+
+
+    --ff-default: 'Sora', sans-serif;
+}
+
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--clr-lotion);
+    font-family: var(--ff-default);
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 350px;
+    background-color: var(--clr-white);
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.container > div {
+    margin: 1rem;
+}
+
+.container__img {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.container__content {
+    display: grid;
+    gap: .5rem;
+
+    .tag {
+        max-width: fit-content;
+        font-size: .625rem;
+        font-weight: 700;
+        color: var(--clr-blue-violet);
+        background-color: var(--clr-pale-lavender);
+        padding: .3rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--clr-yankees-blue);
+    }
+
+    .text {
+        font-size: .875rem;
+        color: var(--clr-autometalsaurus);
+        line-height: 1.5;
+    }
+
+}
+
+.container__author {
+    font-size: .75rem;
+    color: var(--clr-autometalsaurus);
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid var(--clr-bright-gray);
+}
